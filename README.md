@@ -20,6 +20,8 @@ Before we move on, we have to make it harder for AV/EDR to analyse our binary da
 In Notepad++ serach for: ^.{100} replace with: $0\r\n
 
 
+![Step3](https://github.com/mobdk/WordVBAPayload/blob/master/step3.PNG)
+
 
 
 
