@@ -49,4 +49,7 @@ copy /B Template.doc+payload.bin Final.doc
 
 Now Final.doc contains embedded binary payload, don't run Template.doc
 
- 
+This PoC clip shows how it works, but payload is not embedded in Word macro.
+
+https://www.youtube.com/watch?v=0dEMQ_Iht98&t=91s
+
