@@ -6,7 +6,8 @@ flagged by AV/EDR, in this example I use merge of files, like:
 
 copy /B Document.doc+payload.txt NewDocumentWithBinaryPayload.doc (don't use .docx) the payload.txt is our binary payload, open payload.txt in a HEX editor, HxD is a greate tool.
 
-https://github.com/mobdk/WordVBAPayload/blob/master/step1.PNG
+
+![Step1](https://github.com/mobdk/WordVBAPayload/blob/master/step1.PNG)
 
 
 
