@@ -8,6 +8,8 @@ copy /B Document.doc+payload.txt NewDocumentWithBinaryPayload.doc (don't use .do
 
 ![Step1](https://github.com/mobdk/WordVBAPayload/blob/master/step1.PNG)
 
+Now insert some hex string that is unique, something we can serach for, to find our offset, I use f181d8, this is the beginning of 
+our payload inside Word document.
 
 
 
