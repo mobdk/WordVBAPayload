@@ -12,7 +12,12 @@ Now insert some hex string that is unique, something we can serach for, to find 
 our payload inside Word document. Save changes and copy all the HEX values, paste in NotePad++ and remove all spaces
 
 
+![Step2](https://github.com/mobdk/WordVBAPayload/blob/master/step2.PNG)
 
+
+Before we move on, we have to make it harder for AV/EDR to analyse our binary data, I recommend inserting fake data ever second line, so I split it up in 100 chars and insert fake data, like this:
+
+In Notepad++ serach for: ^.{100} replace with: $0\r\n
 
 
 
