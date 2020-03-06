@@ -34,13 +34,15 @@ to extract from VBA code, like this: (remember to remove all line breaks)
 Now we can serach for our offset = f181d8 and extract binary data, I have 1135 lines divided by 2 and each line is 100 divided by 2:
 
 
-For y = 1 To 567  <--- 1135/2 
+For y = 1 To 567  <--- 1135/2
+
     For i = 1 To 50  <--- 100/2
       Put #File2, p, CByte(buffer(pos))  <--- write payload to disk
       pos = pos + 1
       p = p + 1
     Next i
     pos = pos + 50  <--- step 50
+    
 Next y
 
 
