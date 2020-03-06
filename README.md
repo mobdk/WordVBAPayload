@@ -8,3 +8,4 @@ copy /B Document.doc+payload.txt NewDocumentWithBinaryPayload.doc (don't use .do
 
 ![Step1](https://github.com/mobdk/BinBAT/blob/master/step1.PNG)
 
+ 
