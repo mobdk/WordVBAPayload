@@ -22,6 +22,12 @@ In Notepad++ serach for: ^.{100} replace with: $0\r\n
 
 ![Step3](https://github.com/mobdk/WordVBAPayload/blob/master/step3.PNG)
 
+every second line is fake data, starting with a1, this in not something yoy have to do, but it makes it harder to analyse our 
+embedded payload. The last thing I do is adding the value 0 at EOF, so every line is 100 hex chars long, it makes it simpler
+to extract from VBA code, like this:
+
+
+
 
 
 
