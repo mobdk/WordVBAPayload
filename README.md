@@ -44,6 +44,9 @@ For y = 1 To 567  <--- 1135/2
 Next y
 ```
 
+Create a Word document, lets call it Template.doc, insert VBA code in this example, then 
+copy /B Template.doc+payload.bin Final.doc
 
+Now Final.doc contains embedded binary payload, don't run Template.doc
 
  
