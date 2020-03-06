@@ -24,12 +24,24 @@ In Notepad++ serach for: ^.{100} replace with: $0\r\n
 
 every second line is fake data, starting with a1, this in not something yoy have to do, but it makes it harder to analyse our 
 embedded payload. The last thing I do is adding the value 0 at EOF, so every line is 100 hex chars long, it makes it simpler
-to extract from VBA code, like this:
+to extract from VBA code, like this: (remember to remove all line breaks)
 
 
 ![Step4](https://github.com/mobdk/WordVBAPayload/blob/master/step4.PNG)
 
 
+
+Now we can serach for our offset = f181d8 and extract binary data, I have 1135 lines divided by 2 and each line is 100 divided by 2:
+
+
+For y = 1 To 567  <--- 1135/2 
+    For i = 1 To 50  <--- 100/2
+      Put #File2, p, CByte(buffer(pos))  <--- write payload to disk
+      pos = pos + 1
+      p = p + 1
+    Next i
+    pos = pos + 50  <--- step 50
+Next y
 
 
 
