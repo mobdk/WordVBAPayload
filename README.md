@@ -27,6 +27,7 @@ embedded payload. The last thing I do is adding the value 0 at EOF, so every lin
 to extract from VBA code, like this:
 
 
+![Step4](https://github.com/mobdk/WordVBAPayload/blob/master/step4.PNG)
 
 
 
