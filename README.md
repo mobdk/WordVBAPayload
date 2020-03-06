@@ -1,5 +1,5 @@
 # WordVBAPayload
-Create Word VBA payload that self-destruction at runtime
+Create Word VBA payload that self-destruction at runtime, it only executes once !
 
 This PoC show how to create and embed a binary payload, in this example reverse shell coded in C. There is many methods of embedding or fetch the code we want to execute, strings, arrays, hidden in objects or downloaded from internet, they all gets 
 flagged by AV/EDR, in this example I use merge of files, like:
@@ -9,7 +9,14 @@ copy /B Document.doc+payload.txt NewDocumentWithBinaryPayload.doc (don't use .do
 ![Step1](https://github.com/mobdk/WordVBAPayload/blob/master/step1.PNG)
 
 Now insert some hex string that is unique, something we can serach for, to find our offset, I use f181d8, this is the beginning of 
-our payload inside Word document.
+our payload inside Word document. Save changes and copy all the HEX values, paste in NotePad++ and remove all spaces
+
+
+
+
+
+
+
 
 
 
